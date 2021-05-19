@@ -5,7 +5,6 @@ const app = require("../app");
 const jsonschema = require("jsonschema");
 const shipmentSchema = require("../schemas/shipmentSchema");
 
-
 describe("POST /", function () {
   test("valid", async function () {
     const resp = await request(app).post("/shipments").send({
